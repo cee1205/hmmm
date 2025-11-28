@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset {
+            border: 2px solid #ccc;
+            padding: 20px;
+            width: 400px;
+            margin: auto;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        label {
+            width: 100px;
+        }
+        input[type="text"], input[type="password"], input[type="email"], input[type="date"], input[type="radio"], select, textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            padding: 5px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend><h2>Login Form</h2></legend>
+    <form action="baihoc.html" method="get">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" placeholder="Enter your username" size="45"><br>   
+        
+        <label for="phone_number">Phone number:</label><br>
+        <input type="text" id="phone_number" name="phone_number" placeholder="Enter your phone number" size="45"><br>
+        
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter your password" size="45"><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" size="45"><br>
+
+        <label for="date">Date:</label><br>
+        <input type="date" id="date" name="date" size="45"><br>
+
+        <label for="gender">Gender:</label>
+        <label><input type="radio" id="male" name="gender" value="male">Male</label>
+        <label><input type="radio" id="female" name="gender" value="female">Female</label>
+        <label><input type="radio" id="other" name="gender" value="other">Other</label><br>
+
+        <label for="home_town">Home Town:</label>
+        <select id="home_town" name="home_town">
+            <option value="Hanoi">Hanoi</option>
+            <option value="Danang">Danang</option>
+            <option value="HCM">HCM</option>
+        </select><br>
+
+        <label for="introduce">Introduce yourself:</label><br>
+        <textarea id="introduce" name="introduce" rows="4" cols="50" placeholder="Introduce yourself here..."></textarea><br>
+
+        <label for="hobby">Hobby:</label>
+        <label><input type="checkbox" id="Badminton" name="hobby" value="Badminton">Badminton</label>
+        <label><input type="checkbox" id="Football" name="hobby" value="Football">Football</label>
+        <label><input type="checkbox" id="Reading" name="hobby" value="Reading">Reading</label>
+        <br><br>
+
+        <input type="submit" value="Login">
+    </form>
+    </fieldset>
+</body>
+</html> 
